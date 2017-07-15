@@ -17,3 +17,12 @@ class Account(ndb.Model):
             acct.acct_type = property_values["acct_type"]
 
         return acct.put()
+
+    @classmethod
+    def to_dict(ndb_props):
+
+        return {
+            "id": ndb_props.key.url_safe(),
+            "acct_name": ndb_props.acct_name,
+            "acct_type": ndb_props.acct_type,
+        }
