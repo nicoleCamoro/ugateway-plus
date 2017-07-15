@@ -33,7 +33,7 @@ class User(ndb.Model):
     def to_dict(cls, ndb_props):
 
         data = {
-            "id": ndb_props.key,
+            "id": ndb_props.key.urlsafe(),
             "email": ndb_props.email,
             "firstname": ndb_props.firstname,
             "lastname": ndb_props.lastname,
