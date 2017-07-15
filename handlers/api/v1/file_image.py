@@ -1,21 +1,21 @@
 from handlers.api.v1.base import ApiBaseHandler
 # from models.user import User
 from libraries.helpers import functions
-import logging
+from libraries import kairos_face
+from models.image import Image
 
 class FileHandler(ApiBaseHandler):
 
     def post(self):
         """ Post to User """
 
-        user_inputs = self.request.POST.items()
-        props = functions.convert_key_val_pairs(user_inputs)
-        
-        
-        # user = User.save(props)
+        user_inputs = self.request.POST.get('logo')
+        file_obj = functions.gcs_upload(user_inputs)
 
-        # user_json = User.to_dict(user.get())
+        file_info = Image.save(file_obj)
+        file_json = Image.to_dict(file_info)
+
         response = self.construct_response_details(
-            200, "Ok!", props)
+            200, "Ok!", file_json)
 
         self.render(response)
