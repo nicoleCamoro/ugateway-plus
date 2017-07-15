@@ -4,7 +4,7 @@ import webapp2
 import json
 import logging
 
-from gaesessions import get_current_session
+# from gaesessions import get_current_session
 from models.user import User
 
 # setup template
@@ -21,27 +21,27 @@ class BaseHandler(webapp2.RequestHandler):
 	def __init__(self, request=None, response=None):
 		self.initialize(request, response)
 
-		self.session = self.get_session()
-		self.user = self.get_current_user()
+		# self.session = self.get_session()
+		# self.user = self.get_current_user()
 
-	def get_session(self):
-		return get_current_session()
+	# def get_session(self):
+	# 	return get_current_session()
 
-	def get_current_user(self):
-		if self.session.has_key("user"):
-			user = User.get_by_id(self.session["user"])
-			return user
-		else:
-			return None
+	# def get_current_user(self):
+	# 	if self.session.has_key("user"):
+	# 		user = User.get_by_id(self.session["user"])
+	# 		return user
+	# 	else:
+	# 		return None
 
-	def login(self, user):
-		self.session["user"] = user.key.id()
-		return
+	# def login(self, user):
+	# 	self.session["user"] = user.key.id()
+	# 	return
 
-	def logout(self):
-		if self.session.is_active():
-			self.session.terminate()
-			return
+	# def logout(self):
+	# 	if self.session.is_active():
+	# 		self.session.terminate()
+	# 		return
 
 	def send_json_response(self, response_data):
 		self.response.headers["Content-Type"] = "application/json"

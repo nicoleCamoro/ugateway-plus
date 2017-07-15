@@ -1,8 +1,5 @@
 import webapp2
-
-class FaceDetection(webapp2.RequestHandler):
+from base import BaseHandler
+class FaceDetection(BaseHandler):
     def get(self):
-
-
-
-        self.response.write('Hello, World!')
+        self.render_template("templates/face_detect.html")

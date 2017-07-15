@@ -4,11 +4,22 @@
         <title></title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/style.css" rel="stylesheet">
+        <link href="../css/style.css" rel="stylesheet">
     </head>
     <body>
-        <div>
-            
+
+        <div class="camera">
+            <video id="video">Video stream not available.</video>
+            <button id="startbutton">Take photo</button>
         </div>
+        <canvas id="canvas">
+        </canvas>
+        <div>
+            <h1>Facial Verification</h1>
+            <h4>Stay upright while the system is verifying you</h4>
+        </div>
+
     </body>
+
+    <script src="../js/webcam.js"></script>
 </html>
