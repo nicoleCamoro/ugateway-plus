@@ -1,5 +1,4 @@
 from google.appengine.ext import ndb
-from helpers import functions
 
 
 class User(ndb.Model):
@@ -29,6 +28,16 @@ class User(ndb.Model):
             user.balance = property_values["balance"]
         if property_values["pin"]:
             user.pin = property_values["pin"]
-        if property_values["account_num"]:
-            user.account_num = property_values["account_num"]
         return user.put()
+
+    @classmethod
+    def to_dict(ndb_props):
+
+        return {
+            "id": ndb_props.key.url_safe(),
+            "email": ndb_props.email,
+            "firstname": ndb_props.firstname,
+            "lastname": ndb_props.lastname,
+            "balance": ndb_props.balance,
+            "pin": ndb_props.pin
+        }
