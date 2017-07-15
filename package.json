@@ -8,5 +8,8 @@
     "serve": "dev_appserver.py ."
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "^3.3.7"
+  }
 }
