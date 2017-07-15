@@ -71,7 +71,6 @@
       
       if (timeleft % 3 === 0) {
         takepicture()
-        download()
       }
 
     },1000);
@@ -94,18 +93,12 @@
       context.drawImage(video, 0, 0, width, height);
     
       var data = canvas.toDataURL('image/png');
+      upload_to_server(data);
     } else {
       clearphoto();
     }
   }
 
-  function download(){
-    var download = document.getElementById("download");
-    var image = document.getElementById("canvas").toDataURL("image/png")
-      .replace("image/png", "image/octet-stream");
-    download.setAttribute("href", image);
-
-  }
   
   window.addEventListener('load', startup, false);
 })();
