@@ -9,7 +9,6 @@ class User(ndb.Model):
     lastname = ndb.StringProperty()
     pin = ndb.StringProperty()
     balance = ndb.FloatProperty()
-    account_num = ndb.IntegerProperty()
     created_at = ndb.DateTimeProperty(auto_now_add=True)
     updated_at = ndb.DateTimeProperty(auto_now=True)
 
@@ -25,13 +24,13 @@ class User(ndb.Model):
         if property_values["lastname"]:
             user.lastname = property_values["lastname"]
         if property_values["balance"]:
-            user.balance = property_values["balance"]
+            user.balance = float(property_values["balance"])
         if property_values["pin"]:
             user.pin = property_values["pin"]
         return user.put()
 
     @classmethod
-    def to_dict(ndb_props):
+    def to_dict(cls, ndb_props):
 
         return {
             "id": ndb_props.key.url_safe(),
