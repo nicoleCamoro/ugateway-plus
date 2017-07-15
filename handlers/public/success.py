@@ -3,4 +3,4 @@ from base import BaseHandler
 
 class Success(BaseHandler):
     def get(self):
-        self.render_template("templates/success.html")
+        self.render_template("template/success.html")

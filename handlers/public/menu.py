@@ -3,4 +3,4 @@ from base import BaseHandler
 
 class Menu(BaseHandler):
     def get(self):
-        self.render_template("templates/menu.html")
+        self.render_template("template/menu.html")
