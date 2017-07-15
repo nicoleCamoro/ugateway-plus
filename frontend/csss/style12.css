@@ -1,0 +1,370 @@
+@charset "UTF-8";
+/**
+* Eric Meyer's Reset CSS v2.0
+*/
+html {
+	zoom: 59%;
+}
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input, textarea {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section, time {
+	display: block;
+}
+
+body {
+	line-height: 1;
+	color: black;
+	background: white;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* meyerweb css reset end */
+
+textarea:focus, input:focus {
+	outline: 0;
+}
+
+input {
+	border-width: 0;
+}
+
+em {
+	font-style: italic;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+}
+
+sup {
+	vertical-align: text-top;
+	font-size: 58.3%; /*Corresponds to Photoshop's font size glyph transformation*/
+}
+
+sub {
+	vertical-align: text-bottom;
+	font-size: 58.3%; /*Corresponds to Photoshop's font size glyph transformation*/
+}
+
+img,
+embed,
+object,
+video {
+	max-width: 100%;
+}
+
+.group:before,
+.group:after {
+	content: " ";
+	display: table;
+}
+
+.group:after {
+	clear: both;
+}
+
+.group {
+	zoom: 1; /* ie 6/7 */
+}
+
+.no-space-between-inline-blocks {
+	letter-spacing: -0.31em; /* webkit */
+	*letter-spacing: normal; /* reset IE < 8 */
+	word-spacing: -0.43em; /* IE < 8 && gecko */
+}
+
+/* restore spacing on inner elements */
+.no-space-between-inline-blocks > * {
+	letter-spacing: normal;
+	word-spacing: normal;
+}
+
+.displace {
+	position: absolute;
+	left: -5000px;
+}
+
+body {
+	min-width: 1818px;
+	color: #ffffff;
+	font-family: Montserrat, sans-serif;
+	font-size: 37.4967px;
+	font-style: normal;
+	font-weight: normal;
+	letter-spacing: 0;
+	text-decoration: none;
+}
+.global_container_ {
+	float: none;
+	height: auto;
+	margin: 0 auto;
+	padding: 44px 0 29px;
+	position: relative;
+	width: 100%; /* 1920px / 1920px = 100% */
+	background: #ff9e1f center 0;
+	background-position: center top;
+}
+.rectangle-holder {
+	padding: 13px 0 10px;
+	position: relative;
+	background: #eb7101 center 0;
+	background-position: center top;
+}
+.group-2 {
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	right: 657px;
+}
+.row {
+	margin: 23px auto 0;
+	padding: 0 0 0 461px;
+	position: relative;
+	width: 1357px;
+}
+.wrapper-3 {
+	float: left;
+	height: 852px;
+	margin: 52px 33px 0 0;
+	position: relative;
+	width: 896px;
+}
+.group-3 {
+	left: 50%;
+	padding: 6px 11px 20px;
+	position: absolute;
+	top: 154px;
+	width: 452px;
+	background: url(../images/images-12/image.jpg) no-repeat;
+	margin-left: -235px;
+}
+.col-2 {
+	margin: 0 auto;
+	min-height: 462px;
+	padding: 20px 40px;
+	position: relative;
+	width: 368px;
+	background: url(../images/images-12/group_4.png) no-repeat;
+}
+.row-2 {
+	margin: 0 auto;
+	position: relative;
+	width: 365px;
+}
+.row-2 > * {
+	float: left;
+	margin: 0 109px 0 0;
+}
+.row-2 > *:last-child {
+	margin-right: 0 !important;
+}
+.col-4 {
+	position: relative;
+	width: 48px;
+}
+.text1 {
+	margin: 0 0 0 3px;
+	color: #333333;
+	font-size: 66.01756px;
+	text-align: left;
+}
+.text4 {
+	margin: 64px 0 0;
+	color: #333333;
+	font-size: 66.01756px;
+	text-align: center;
+}
+.text7 {
+	margin: 64px 0 0;
+	color: #333333;
+	font-size: 66.01756px;
+	text-align: center;
+}
+.col-5 {
+	position: relative;
+	width: 48px;
+	margin-top: 1px !important;
+}
+.text2 {
+	color: #333333;
+	font-size: 66.01756px;
+	text-align: center;
+}
+.text5 {
+	margin: 64px 0 0;
+	color: #333333;
+	font-size: 66.01756px;
+	text-align: center;
+}
+.text8 {
+	margin: 65px 0 0;
+	color: #333333;
+	font-size: 66.01756px;
+	text-align: center;
+}
+.col-6 {
+	position: relative;
+	width: 51px;
+}
+.text3 {
+	color: #333333;
+	font-size: 66.01756px;
+	text-align: center;
+}
+.text6 {
+	margin: 74px 0 0;
+	color: #333333;
+	font-size: 66.01756px;
+	text-align: center;
+}
+.text9 {
+	margin: 56px 0 0;
+	color: #333333;
+	font-size: 66.01756px;
+	text-align: center;
+}
+.text0 {
+	margin: 68px 0 0;
+	color: #333333;
+	font-size: 66.01756px;
+	text-align: center;
+}
+.col {
+	left: 50%;
+	min-height: 793px;
+	padding: 35px 0 24px;
+	position: absolute;
+	top: 0;
+	width: 896px;
+	background: url(../images/images-12/rectangle_2.png) no-repeat;
+	margin-left: -448px;
+}
+.group-4 {
+	margin: 0 auto;
+	min-height: 61px;
+	padding: 10px 27px 12px;
+	position: relative;
+	width: 544px;
+	background: url(../images/images-12/rectangle_path.png) no-repeat;
+}
+.text {
+	float: left;
+	margin: 5px 0 0 170px;
+	font-size: 56.34312px;
+}
+.x {
+	float: right;
+	margin: 0 5px 0 0;
+	font-family: Gotham, serif;
+	font-size: 55.95935px;
+	font-weight: 500;
+	text-align: center;
+}
+.rectangle {
+	margin: 578px auto 0;
+	padding: 6px 11px 20px;
+	width: 434px;
+	background: url(../images/images-12/image_2.jpg) no-repeat;
+}
+.group-holder {
+	margin: 0 auto;
+	min-height: 59px;
+	padding: 24px 0 23px 5px;
+	width: 425px;
+	background: url(../images/images-12/group_5.png) no-repeat;
+	font-size: 59.20998px;
+	text-align: center;
+}
+.col-3 {
+	float: left;
+	position: relative;
+	width: 428px;
+}
+.layer-1 {
+	position: relative;
+}
+.text-2 {
+	float: left;
+	margin: 2px 0 0 1px;
+	width: 287px;
+	color: #6c4521;
+	font-weight: 300;
+}
+.rectangle-holder-2 {
+	float: right;
+	min-height: 40px;
+	width: 129px;
+	background: url(../images/images-12/rectangle_3.png) no-repeat;
+	color: #fbca92;
+	font-size: 23.23339px;
+	font-weight: bold;
+	line-height: 40px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.text-3 {
+	margin: 784px 0 0 153px;
+	font-size: 29.00246px;
+	font-weight: 300;
+	text-align: left;
+}
+.group-5 {
+	left: 93.5px;
+	margin: 7px auto 0;
+	padding: 2px 0 13px;
+	position: relative;
+	width: 179px;
+	background: url(../images/images-12/group_2.png) no-repeat;
+}
+.group-6 {
+	display: block;
+	left: 79px;
+	margin: 0 auto;
+	position: relative;
+}

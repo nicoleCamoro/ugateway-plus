@@ -1,0 +1,337 @@
+@charset "UTF-8";
+/**
+* Eric Meyer's Reset CSS v2.0
+*/
+html {
+	zoom: 59%;
+}
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input, textarea {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section, time {
+	display: block;
+}
+
+body {
+	line-height: 1;
+	color: black;
+	background: white;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* meyerweb css reset end */
+
+textarea:focus, input:focus {
+	outline: 0;
+}
+
+input {
+	border-width: 0;
+}
+
+em {
+	font-style: italic;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+}
+
+sup {
+	vertical-align: text-top;
+	font-size: 58.3%; /*Corresponds to Photoshop's font size glyph transformation*/
+}
+
+sub {
+	vertical-align: text-bottom;
+	font-size: 58.3%; /*Corresponds to Photoshop's font size glyph transformation*/
+}
+
+img,
+embed,
+object,
+video {
+	max-width: 100%;
+}
+
+.group:before,
+.group:after {
+	content: " ";
+	display: table;
+}
+
+.group:after {
+	clear: both;
+}
+
+.group {
+	zoom: 1; /* ie 6/7 */
+}
+
+.no-space-between-inline-blocks {
+	letter-spacing: -0.31em; /* webkit */
+	*letter-spacing: normal; /* reset IE < 8 */
+	word-spacing: -0.43em; /* IE < 8 && gecko */
+}
+
+/* restore spacing on inner elements */
+.no-space-between-inline-blocks > * {
+	letter-spacing: normal;
+	word-spacing: normal;
+}
+
+.displace {
+	position: absolute;
+	left: -5000px;
+}
+
+body {
+	min-width: 1818px;
+	color: #ffffff;
+	font-family: Montserrat, sans-serif;
+	font-size: 68.12422px;
+	font-style: normal;
+	font-weight: normal;
+	letter-spacing: 0;
+	text-decoration: none;
+}
+.global_container_ {
+	float: none;
+	height: auto;
+	margin: 0 auto;
+	padding: 44px 0;
+	position: relative;
+	width: 100%; /* 1920px / 1920px = 100% */
+	background: #ff9e1f center 0;
+	background-position: center top;
+}
+.rectangle-holder {
+	padding: 13px 0 10px;
+	position: relative;
+	background: #eb7101 center 0;
+	background-position: center top;
+}
+.group-2 {
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	right: 657px;
+}
+.l-constrained {
+	margin: 23px auto 0;
+	position: relative;
+	width: 1818px;
+}
+.main-content-wrapper {
+	left: 34.5px;
+	margin: 0 auto;
+	position: relative;
+	width: 1749px;
+}
+.row-2 {
+	position: relative;
+}
+.col {
+	float: left;
+	margin: 5px 0 0;
+	position: relative;
+	width: 188px;
+}
+.payroll {
+	color: #6c4521;
+	font-size: 54.28379px;
+	text-align: center;
+}
+.e29954 {
+	margin: 0 0 0 4px;
+	color: #6c4521;
+	font-size: 26px;
+	font-weight: 100;
+}
+.withdraw {
+	float: left;
+	margin: 131px 0 0 476px;
+	color: #333333;
+	font-size: 68px;
+	text-align: center;
+}
+.text {
+	float: left;
+	margin: 2px 0 0 311px;
+	color: #6c4521;
+	font-size: 37.4967px;
+	font-weight: 300;
+}
+.rectangle-holder-2 {
+	float: left;
+	margin: 0 0 0 12px;
+	min-height: 40px;
+	width: 129px;
+	background: url(../images/images-8/rectangle_2.png) no-repeat;
+	color: #fbca92;
+	font-size: 23.23339px;
+	font-weight: bold;
+	line-height: 40px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.row {
+	margin: 67px auto 0;
+	position: relative;
+	right: 35.5px;
+	width: 1202px;
+}
+.row > * {
+	float: left;
+	margin: 0 22px 0 0;
+}
+.row > *:last-child {
+	margin-right: 0 !important;
+}
+.image-holder {
+	padding: 6px 10px 20px;
+	width: 366px;
+	background: url(../images/images-8/image.jpg) no-repeat;
+}
+.group-holder {
+	margin: 0 auto;
+	min-height: 68px;
+	padding: 46px 0 54px;
+	position: relative;
+	right: 3px;
+	width: 360px;
+	background: url(../images/images-8/group.png) no-repeat;
+	text-align: center;
+}
+.image-holder-2 {
+	padding: 6px 10px 20px;
+	width: 366px;
+	background: url(../images/images-8/image.jpg) no-repeat;
+}
+.group-holder-2 {
+	margin: 0 auto;
+	min-height: 67px;
+	padding: 47px 0 54px;
+	position: relative;
+	right: 3px;
+	width: 360px;
+	background: url(../images/images-8/group.png) no-repeat;
+	text-align: center;
+}
+.image-holder-3 {
+	padding: 6px 10px 20px;
+	width: 366px;
+	background: url(../images/images-8/image.jpg) no-repeat;
+}
+.group-holder-3 {
+	margin: 0 auto;
+	min-height: 67px;
+	padding: 47px 0 54px;
+	position: relative;
+	right: 3px;
+	width: 360px;
+	background: url(../images/images-8/group.png) no-repeat;
+	text-align: center;
+}
+.footer {
+	margin: 16px auto 0;
+	position: relative;
+	width: 1202px;
+}
+.footer > * {
+	float: left;
+	margin: 0 22px 0 0;
+}
+.footer > *:last-child {
+	margin-right: 0 !important;
+}
+.image-holder-4 {
+	padding: 6px 10px 20px;
+	width: 366px;
+	background: url(../images/images-8/image.jpg) no-repeat;
+}
+.group-holder-4 {
+	margin: 0 auto;
+	min-height: 67px;
+	padding: 47px 0 54px;
+	position: relative;
+	right: 3px;
+	width: 360px;
+	background: url(../images/images-8/group.png) no-repeat;
+	text-align: center;
+}
+.image-holder-5 {
+	padding: 6px 10px 20px;
+	width: 366px;
+	background: url(../images/images-8/image.jpg) no-repeat;
+}
+.group-holder-5 {
+	margin: 0 auto;
+	min-height: 67px;
+	padding: 47px 0 54px;
+	position: relative;
+	right: 3px;
+	width: 360px;
+	background: url(../images/images-8/group.png) no-repeat;
+	text-align: center;
+}
+.image-holder-6 {
+	padding: 6px 10px 20px;
+	width: 366px;
+	background: url(../images/images-8/image.jpg) no-repeat;
+}
+.group-holder-6 {
+	margin: 0 auto;
+	min-height: 68px;
+	padding: 46px 0 54px;
+	position: relative;
+	right: 3px;
+	width: 360px;
+	background: url(../images/images-8/group.png) no-repeat;
+	text-align: center;
+}

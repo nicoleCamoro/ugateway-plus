@@ -1,0 +1,319 @@
+@charset "UTF-8";
+/**
+* Eric Meyer's Reset CSS v2.0
+*/
+html {
+	zoom: 59%;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input, textarea {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section, time {
+	display: block;
+}
+
+body {
+	line-height: 1;
+	color: black;
+	background: white;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* meyerweb css reset end */
+
+textarea:focus, input:focus {
+	outline: 0;
+}
+
+input {
+	border-width: 0;
+}
+
+em {
+	font-style: italic;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+}
+
+sup {
+	vertical-align: text-top;
+	font-size: 58.3%; /*Corresponds to Photoshop's font size glyph transformation*/
+}
+
+sub {
+	vertical-align: text-bottom;
+	font-size: 58.3%; /*Corresponds to Photoshop's font size glyph transformation*/
+}
+
+img,
+embed,
+object,
+video {
+	max-width: 100%;
+}
+
+.group:before,
+.group:after {
+	content: " ";
+	display: table;
+}
+
+.group:after {
+	clear: both;
+}
+
+.group {
+	zoom: 1; /* ie 6/7 */
+}
+
+.no-space-between-inline-blocks {
+	letter-spacing: -0.31em; /* webkit */
+	*letter-spacing: normal; /* reset IE < 8 */
+	word-spacing: -0.43em; /* IE < 8 && gecko */
+}
+
+/* restore spacing on inner elements */
+.no-space-between-inline-blocks > * {
+	letter-spacing: normal;
+	word-spacing: normal;
+}
+
+.displace {
+	position: absolute;
+	left: -5000px;
+}
+
+body {
+	min-width: 1818px;
+	color: #6c4521;
+	font-family: Montserrat, sans-serif;
+	font-size: 29.25px;
+	font-style: normal;
+	font-weight: normal;
+	letter-spacing: 0;
+	text-decoration: none;
+}
+.layer-2 {
+	float: none;
+	height: auto;
+	margin: 0 auto;
+	padding: 44px 0;
+	position: relative;
+	width: 100%; /* 1920px / 1920px = 100% */
+	background: #ff9e1f center 0;
+	background-position: center top;
+}
+.header {
+	position: relative;
+}
+.col-4 {
+	position: relative;
+}
+.rectangle-holder {
+	padding: 13px 0 10px;
+	position: relative;
+	background: #eb7101 center 0;
+	background-position: center top;
+}
+.group-2 {
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	right: 657px;
+}
+.row {
+	margin: 23px auto 0;
+	position: relative;
+	width: 1818px;
+}
+.text {
+	float: left;
+	margin: 2px 0 0;
+	width: 1677px;
+	color: #333333;
+	font-size: 37.4967px;
+	font-weight: 300;
+	text-align: right;
+}
+.rectangle-holder-2 {
+	float: right;
+	min-height: 40px;
+	width: 129px;
+	background: url(../images/images-6/rectangle_2.png) no-repeat;
+	color: #fbca92;
+	font-size: 23.23339px;
+	font-weight: bold;
+	line-height: 40px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.l-constrained {
+	margin: 156px auto 0;
+	padding: 0 268px;
+	position: relative;
+	width: 1282px;
+}
+.text-2 {
+	color: #333333;
+	font-size: 68px;
+	text-align: center;
+}
+.group-3 {
+	margin: 72px 0 0;
+	position: relative;
+}
+.rectangle {
+	float: left;
+	padding: 6px 11px 21px;
+	position: relative;
+	width: 581px;
+	background: url(../images/images-6/image_2.jpg) no-repeat;
+}
+.col-2 {
+	margin: 0 auto;
+	min-height: 237px;
+	padding: 50px 38px 25px;
+	position: relative;
+	right: 3px;
+	width: 499px;
+	background: url(../images/images-6/group_3.png) no-repeat;
+}
+.savings {
+	color: #ffffff;
+	font-size: 83.41667px;
+	text-align: center;
+}
+.eo9954 {
+	margin: 7px 0 0;
+	font-size: 32px;
+	font-weight: 100;
+	text-align: center;
+}
+.line {
+	display: block;
+	left: 3px;
+	margin: 13px auto 0;
+	position: relative;
+}
+.text-3 {
+	margin: 16px 0 0;
+	font-weight: 100;
+	text-align: center;
+}
+.group-4 {
+	margin: 8px 0 0 75px;
+	position: relative;
+}
+.php {
+	float: left;
+	margin: 12px 53px 0 1px;
+	font-size: 30.33333px;
+	font-weight: 100;
+}
+.text-4 {
+	float: left;
+	font-size: 45.66199px;
+	text-transform: uppercase;
+}
+.rectangle-2 {
+	float: right;
+	padding: 6px 10px 21px;
+	position: relative;
+	width: 582px;
+	background: url(../images/images-6/image.jpg) no-repeat;
+}
+.col {
+	margin: 0 auto;
+	min-height: 243px;
+	padding: 44px 38px 25px;
+	position: relative;
+	right: 3.5px;
+	width: 499px;
+	background: url(../images/images-6/group_2.png) no-repeat;
+}
+.payroll {
+	color: #ffffff;
+	font-size: 83.41667px;
+	text-align: center;
+}
+.e29954 {
+	margin: 6px 0 0;
+	font-size: 32px;
+	font-weight: 100;
+	text-align: center;
+}
+.line-2 {
+	display: block;
+	left: 3px;
+	margin: 13px auto 0;
+	position: relative;
+}
+.text-5 {
+	margin: 16px 0 0;
+	font-weight: 100;
+	text-align: center;
+}
+.group-5 {
+	margin: 8px 0 0 75px;
+	position: relative;
+}
+.php-2 {
+	float: left;
+	margin: 12px 78px 0 1px;
+	font-size: 30.33333px;
+	font-weight: 100;
+}
+.text-6 {
+	float: left;
+	font-size: 45.66199px;
+	text-transform: uppercase;
+}
+.text-style {
+	text-transform: uppercase;
+}

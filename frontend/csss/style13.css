@@ -1,0 +1,214 @@
+@charset "UTF-8";
+/**
+* Eric Meyer's Reset CSS v2.0
+*/
+html {
+	zoom: 59%;
+}
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input, textarea {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section, time {
+	display: block;
+}
+
+body {
+	line-height: 1;
+	color: black;
+	background: white;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* meyerweb css reset end */
+
+textarea:focus, input:focus {
+	outline: 0;
+}
+
+input {
+	border-width: 0;
+}
+
+em {
+	font-style: italic;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+}
+
+sup {
+	vertical-align: text-top;
+	font-size: 58.3%; /*Corresponds to Photoshop's font size glyph transformation*/
+}
+
+sub {
+	vertical-align: text-bottom;
+	font-size: 58.3%; /*Corresponds to Photoshop's font size glyph transformation*/
+}
+
+img,
+embed,
+object,
+video {
+	max-width: 100%;
+}
+
+.group:before,
+.group:after {
+	content: " ";
+	display: table;
+}
+
+.group:after {
+	clear: both;
+}
+
+.group {
+	zoom: 1; /* ie 6/7 */
+}
+
+.no-space-between-inline-blocks {
+	letter-spacing: -0.31em; /* webkit */
+	*letter-spacing: normal; /* reset IE < 8 */
+	word-spacing: -0.43em; /* IE < 8 && gecko */
+}
+
+/* restore spacing on inner elements */
+.no-space-between-inline-blocks > * {
+	letter-spacing: normal;
+	word-spacing: normal;
+}
+
+.displace {
+	position: absolute;
+	left: -5000px;
+}
+
+body {
+	min-width: 1768px;
+	color: #ffffff;
+	font-family: Montserrat, sans-serif;
+	font-size: 58.72027px;
+	font-style: normal;
+	font-weight: normal;
+	letter-spacing: 0;
+	text-decoration: none;
+}
+.global_container_ {
+	float: none;
+	height: auto;
+	margin: 0 auto;
+	padding: 44px 0 34px;
+	position: relative;
+	width: 100%; /* 1920px / 1920px = 100% */
+	background: #ff9e1f center 0;
+	background-position: center top;
+}
+.rectangle-holder {
+	padding: 13px 0 10px;
+	position: relative;
+	background: #eb7101 center 0;
+	background-position: center top;
+}
+.group-2 {
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	right: 657px;
+}
+.l-constrained {
+	margin: 146px auto 0;
+	padding: 0 6px;
+	position: relative;
+	width: 1756px;
+}
+.main-content-wrapper {
+	left: 295.5px;
+	margin: 0 auto;
+	position: relative;
+	width: 1025px;
+}
+.ellipse-holder {
+	margin: 0 auto;
+	padding: 112px 0 103px;
+	position: relative;
+	right: 289px;
+	width: 447px;
+	background: url(../images/images-13/ellipse.png) no-repeat;
+}
+.group-3 {
+	display: block;
+	margin: 0 auto;
+}
+.text {
+	margin: 30px 654px 0 58px;
+	font-weight: 100;
+	line-height: 1.2;
+	text-align: center;
+}
+.text-2 {
+	margin: 83px 10px 0;
+	font-size: 29.00246px;
+	font-weight: 300;
+	text-align: right;
+}
+.group-4 {
+	left: 788.5px;
+	margin: 7px auto 0;
+	padding: 2px 0 13px;
+	position: relative;
+	width: 179px;
+	background: url(../images/images-13/group_2.png) no-repeat;
+}
+.group-5 {
+	display: block;
+	left: 79px;
+	margin: 0 auto;
+	position: relative;
+}

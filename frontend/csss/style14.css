@@ -1,0 +1,279 @@
+@charset "UTF-8";
+/**
+* Eric Meyer's Reset CSS v2.0
+*/
+html {
+	zoom: 59%;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input, textarea {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section, time {
+	display: block;
+}
+
+body {
+	line-height: 1;
+	color: black;
+	background: white;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* meyerweb css reset end */
+
+textarea:focus, input:focus {
+	outline: 0;
+}
+
+input {
+	border-width: 0;
+}
+
+em {
+	font-style: italic;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+}
+
+sup {
+	vertical-align: text-top;
+	font-size: 58.3%; /*Corresponds to Photoshop's font size glyph transformation*/
+}
+
+sub {
+	vertical-align: text-bottom;
+	font-size: 58.3%; /*Corresponds to Photoshop's font size glyph transformation*/
+}
+
+img,
+embed,
+object,
+video {
+	max-width: 100%;
+}
+
+.group:before,
+.group:after {
+	content: " ";
+	display: table;
+}
+
+.group:after {
+	clear: both;
+}
+
+.group {
+	zoom: 1; /* ie 6/7 */
+}
+
+.no-space-between-inline-blocks {
+	letter-spacing: -0.31em; /* webkit */
+	*letter-spacing: normal; /* reset IE < 8 */
+	word-spacing: -0.43em; /* IE < 8 && gecko */
+}
+
+/* restore spacing on inner elements */
+.no-space-between-inline-blocks > * {
+	letter-spacing: normal;
+	word-spacing: normal;
+}
+
+.displace {
+	position: absolute;
+	left: -5000px;
+}
+
+body {
+	min-width: 1768px;
+	color: #333333;
+	font-family: Montserrat, sans-serif;
+	font-size: 53px;
+	font-style: normal;
+	font-weight: normal;
+	letter-spacing: 0;
+	text-decoration: none;
+}
+.global_container_ {
+	float: none;
+	height: auto;
+	margin: 0 auto;
+	padding: 44px 0 34px;
+	position: relative;
+	width: 100%; /* 1920px / 1920px = 100% */
+	background: #ff9e1f center 0;
+	background-position: center top;
+}
+.wrapper {
+	height: 934px;
+	overflow: hidden;
+	position: relative;
+	width: 100%; /* 1920px / 1920px = 100% */
+}
+.l-unconstrained {
+	position: absolute;
+	top: 228px;
+	width: 100%;
+}
+.l-constrained-2 {
+	margin: 0 auto;
+	padding: 0 15px;
+	position: relative;
+	width: 1738px;
+}
+.text {
+	font-size: 96.19745px;
+	text-align: center;
+}
+.text-2 {
+	margin: 17px auto 0;
+	width: 746px;
+	font-weight: 300;
+	line-height: 1.2;
+	text-align: center;
+}
+.rectangle {
+	height: 80px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%; /* 1920px / 1920px = 100% */
+	background: #eb7101 center 0;
+	background-position: center top;
+}
+.layer-1 {
+	left: 50%;
+	position: absolute;
+	top: 13px;
+	width: 1768px;
+	margin-left: -884px;
+}
+.group-2 {
+	display: block;
+	position: relative;
+}
+.line {
+	height: 2px;
+	margin: 483px auto 0;
+	width: 1072px;
+	background-color: rgba(51, 51, 51, 0.5); /*Layer's solid color*/
+}
+.text-3 {
+	margin: 62px 0 0;
+	font-weight: 300;
+	line-height: 1.2;
+	text-align: center;
+}
+.group-3 {
+	margin: 65px auto 0;
+	position: relative;
+	width: 950px;
+}
+.rectangle-2 {
+	float: left;
+	padding: 6px 10px 20px;
+	width: 437px;
+	background: url(../images/images-14/image.jpg) no-repeat;
+}
+.group-holder {
+	margin: 0 auto;
+	min-height: 59px;
+	padding: 24px 0 23px;
+	position: relative;
+	right: 3px;
+	width: 431px;
+	background: url(../images/images-14/group_3.png) no-repeat;
+	color: #ffffff;
+	font-size: 59.20998px;
+	text-align: center;
+}
+.rectangle-3 {
+	float: right;
+	padding: 6px 10px 20px;
+	width: 437px;
+	background: url(../images/images-14/image.jpg) no-repeat;
+}
+.group-holder-2 {
+	margin: 0 auto;
+	min-height: 59px;
+	padding: 24px 0 23px;
+	position: relative;
+	right: 3px;
+	width: 431px;
+	background: url(../images/images-14/group_3.png) no-repeat;
+	color: #ffffff;
+	font-size: 59.20998px;
+	text-align: center;
+}
+.l-constrained {
+	margin: -7px auto 0;
+	padding: 0 6px;
+	position: relative;
+	width: 1756px;
+}
+.text-4 {
+	margin: 0 0 0 1512px;
+	color: #ffffff;
+	font-size: 29.00246px;
+	font-weight: 300;
+	text-align: left;
+}
+.group-4 {
+	left: 788.5px;
+	margin: 7px auto 0;
+	padding: 2px 0 13px;
+	position: relative;
+	width: 179px;
+	background: url(../images/images-14/group.png) no-repeat;
+}
+.group-5 {
+	display: block;
+	left: 79px;
+	margin: 0 auto;
+	position: relative;
+}
