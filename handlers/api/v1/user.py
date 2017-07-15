@@ -10,11 +10,11 @@ class UserHandler(ApiBaseHandler):
 
         user_inputs = self.request.POST.items()
 
-        response = functions.convert_key_val_pairs(user_inputs)
-        user = User.save(response)
-        logging.debug(user.get())
-        # user_json = User.to_dict(user.get())
+        props = functions.convert_key_val_pairs(user_inputs)
+        user = User.save(props)
+
+        user_json = User.to_dict(user.get())
         response = self.construct_response_details(
-            200, "Ok!", response)
+            200, "Ok!", user_json)
 
         self.render(response)

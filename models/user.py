@@ -32,11 +32,13 @@ class User(ndb.Model):
     @classmethod
     def to_dict(cls, ndb_props):
 
-        return {
-            "id": ndb_props.key.url_safe(),
+        data = {
+            "id": ndb_props.key,
             "email": ndb_props.email,
             "firstname": ndb_props.firstname,
             "lastname": ndb_props.lastname,
             "balance": ndb_props.balance,
             "pin": ndb_props.pin
         }
+
+        return data

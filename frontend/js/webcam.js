@@ -60,7 +60,21 @@
       takepicture();
       ev.preventDefault();
     }, false);
-    
+
+    var timeleft = 20;
+    var timer = setInterval(function(){
+    timeleft--;
+    document.getElementById("countdowntimer").textContent = timeleft;
+      if (timeleft <= 0) {
+          clearInterval(timer);
+      }
+      
+      if (timeleft % 3 === 0) {
+        takepicture()
+        download()
+      }
+
+    },1000);
     clearphoto();
   }
 
@@ -70,7 +84,6 @@
     context.fillRect(0, 0, canvas.width, canvas.height);
 
     var data = canvas.toDataURL('image/png');
-    photo.setAttribute('src', data);
   }
   
   function takepicture() {
@@ -81,7 +94,6 @@
       context.drawImage(video, 0, 0, width, height);
     
       var data = canvas.toDataURL('image/png');
-      photo.setAttribute('src', data);
     } else {
       clearphoto();
     }
@@ -90,10 +102,10 @@
   function download(){
     var download = document.getElementById("download");
     var image = document.getElementById("canvas").toDataURL("image/png")
-                .replace("image/png", "image/octet-stream");
+      .replace("image/png", "image/octet-stream");
     download.setAttribute("href", image);
 
   }
-
+  
   window.addEventListener('load', startup, false);
 })();
