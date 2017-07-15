@@ -1,8 +1,8 @@
-import requests
+from google.appengine.api import urlfetch
 
-from kairos_face import exceptions, validate_settings
-from kairos_face import settings
-from kairos_face.entities import KairosFaceGallery
+from libraries.kairos_face import exceptions, validate_settings
+from libraries.kairos_face import settings
+from libraries.kairos_face.entities import KairosFaceGallery
 
 _gallery_base_url = settings.base_url + 'gallery/view'
 _galleries_list_url = settings.base_url + 'gallery/list_all'
@@ -19,7 +19,13 @@ def get_gallery(gallery_name):
     }
 
     payload = {'gallery_name': gallery_name}
-    response = requests.post(_gallery_base_url, json=payload, headers=auth_headers)
+    # response = requests.post(_gallery_base_url, json=payload, headers=auth_headers)
+    response = urlfetch.fetch(
+        url=_gallery_base_url,
+        payload=payload,
+        method=urlfetch.POST,
+        headers=auth_headers
+    )
     json_response = response.json()
     if response.status_code != 200 or 'Errors' in json_response:
         raise exceptions.ServiceRequestError(response.status_code, json_response, payload)
@@ -35,7 +41,13 @@ def get_galleries_names_list():
         'app_key': settings.app_key
     }
 
-    response = requests.post(_galleries_list_url, headers=auth_headers)
+    # response = requests.post(_galleries_list_url, headers=auth_headers)
+    response = urlfetch.fetch(
+        url=_galleries_list_url,
+        payload=payload,
+        method=urlfetch.POST,
+        headers=auth_headers
+    )
     json_response = response.json()
     if response.status_code != 200 or 'Errors' in json_response:
         raise exceptions.ServiceRequestError(response.status_code, json_response, None)
@@ -54,7 +66,13 @@ def remove_gallery(gallery_name):
 
     payload = {'gallery_name': gallery_name}
 
-    response = requests.post(_gallery_remove_url, json=payload, headers=auth_headers)
+    # response = requests.post(_gallery_remove_url, json=payload, headers=auth_headers)
+    response = urlfetch.fetch(
+        url=_gallery_remove_url,
+        payload=payload,
+        method=urlfetch.POST,
+        headers=auth_headers
+    )
     json_response = response.json()
     if response.status_code != 200 or 'Errors' in json_response:
         raise exceptions.ServiceRequestError(response.status_code, json_response, payload)
@@ -70,7 +88,13 @@ def get_galleries_names_object():
         'app_key': settings.app_key
     }
 
-    response = requests.post(_galleries_list_url, headers=auth_headers)
+    # response = requests.post(_galleries_list_url, headers=auth_headers)
+    response = urlfetch.fetch(
+        url=_galleries_list_url,
+        payload=payload,
+        method=urlfetch.POST,
+        headers=auth_headers
+    )
     json_response = response.json()
     if response.status_code != 200 or 'Errors' in json_response:
         raise exceptions.ServiceRequestError(response.status_code, json_response, None)
@@ -88,7 +112,13 @@ def get_gallery_object(gallery_name):
     }
 
     payload = {'gallery_name': gallery_name}
-    response = requests.post(_gallery_base_url, json=payload, headers=auth_headers)
+    # response = requests.post(_gallery_base_url, json=payload, headers=auth_headers)
+    response = urlfetch.fetch(
+        url=_gallery_base_url,
+        payload=payload,
+        method=urlfetch.POST,
+        headers=auth_headers
+    )
     json_response = response.json()
     if response.status_code != 200 or 'Errors' in json_response:
         raise exceptions.ServiceRequestError(response.status_code, json_response, payload)

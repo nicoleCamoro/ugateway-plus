@@ -1,7 +1,7 @@
-import requests
+from google.appengine.api import urlfetch
 import base64
-from kairos_face import exceptions, validate_settings, validate_file_and_url_presence
-from kairos_face import settings
+from libraries.kairos_face import exceptions, validate_settings, validate_file_and_url_presence
+from libraries.kairos_face import settings
 
 _detect_base_url = settings.base_url + 'detect'
 
@@ -16,7 +16,13 @@ def detect_face(url=None, file=None, additional_arguments={}):
     }
     payload = _build_payload(url, file, additional_arguments)
 
-    response = requests.post(_detect_base_url, json=payload, headers=auth_headers)
+    # response = requests.post(_detect_base_url, json=payload, headers=auth_headers)
+    response = urlfetch.fetch(
+        url=_detect_base_url,
+        payload=payload,
+        method=urlfetch.POST,
+        headers=auth_headers
+    )
     json_response = response.json()
     if response.status_code != 200 or 'Errors' in json_response:
         raise exceptions.ServiceRequestError(response.status_code, json_response, payload)

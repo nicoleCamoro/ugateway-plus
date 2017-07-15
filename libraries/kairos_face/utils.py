@@ -1,4 +1,4 @@
-from kairos_face import settings, exceptions
+from libraries.kairos_face import settings, exceptions
 
 
 def validate_file_and_url_presence(file, url):

@@ -1,10 +1,11 @@
 import base64
 
-import requests
+# import requests
+from google.appengine.api import urlfetch
 
-from kairos_face import exceptions
-from kairos_face import settings
-from kairos_face.utils import validate_file_and_url_presence, validate_settings
+from libraries.kairos_face import exceptions
+from libraries.kairos_face import settings
+from libraries.kairos_face.utils import validate_file_and_url_presence, validate_settings
 
 _enroll_base_url = settings.base_url + 'enroll'
 
@@ -20,7 +21,13 @@ def enroll_face(subject_id, gallery_name, url=None, file=None, additional_argume
 
     payload = _build_payload(subject_id, gallery_name, url, file, additional_arguments)
 
-    response = requests.post(_enroll_base_url, json=payload, headers=auth_headers)
+    # response = requests.post(_enroll_base_url, json=payload, headers=auth_headers)
+    response = urlfetch.fetch(
+        url=_enroll_base_url,
+        payload=payload,
+        method=urlfetch.POST,
+        headers=auth_headers
+    )
     json_response = response.json()
     if response.status_code != 200 or 'Errors' in json_response:
         raise exceptions.ServiceRequestError(response.status_code, json_response, payload)

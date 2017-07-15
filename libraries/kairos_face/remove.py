@@ -1,6 +1,7 @@
-from kairos_face import exceptions, validate_settings
-from kairos_face import settings
-import requests
+from libraries.kairos_face import exceptions, validate_settings
+from libraries.kairos_face import settings
+from google.appengine.api import urlfetch
+
 
 _remove_base_url = settings.base_url + 'gallery/remove_subject'
 
@@ -16,7 +17,13 @@ def remove_face(subject_id, gallery_name):
 
     payload = _build_payload(gallery_name, subject_id)
 
-    response = requests.post(_remove_base_url, json=payload, headers=auth_headers)
+    # response = requests.post(_remove_base_url, json=payload, headers=auth_headers)
+    response = urlfetch.fetch(
+        url=_remove_base_url,
+        payload=payload,
+        method=urlfetch.POST,
+        headers=auth_headers
+    )
     json_response = response.json()
     if response.status_code != 200 or 'Errors' in json_response:
         raise exceptions.ServiceRequestError(response.status_code, json_response, payload)
