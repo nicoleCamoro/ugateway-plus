@@ -28,11 +28,13 @@ def enroll_face(subject_id, gallery_name, url=None, file=None, additional_argume
         method=urlfetch.POST,
         headers=auth_headers
     )
-    json_response = response.json()
-    if response.status_code != 200 or 'Errors' in json_response:
-        raise exceptions.ServiceRequestError(response.status_code, json_response, payload)
 
-    return json_response
+
+    # json_response = response
+    # if response.status_code != 200 or 'Errors' in json_response:
+    #     raise exceptions.ServiceRequestError(response.status_code, json_response, payload)
+
+    return response
 
 
 def _build_payload(subject_id, gallery_name, url, file, additional_arguments):

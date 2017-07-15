@@ -13,6 +13,7 @@ from handlers.public.menu import Menu
 # API
 from handlers.api.v1.user import UserHandler
 from handlers.api.v1.file_image import FileHandler
+from handlers.api.v1.enroll import EnrollHandler
 
 app = webapp2.WSGIApplication([
     routes.DomainRoute(r'<:.*>', [
@@ -26,5 +27,6 @@ app = webapp2.WSGIApplication([
         # API
         webapp2.Route('/api/v1/user', handler=UserHandler, name='api-user'),
         webapp2.Route('/api/v1/upload', handler=FileHandler, name='api-file'),
+        webapp2.Route('/api/v1/enroll', handler=EnrollHandler, name='api-file'),
     ])
 ])
