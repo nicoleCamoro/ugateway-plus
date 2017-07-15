@@ -1,0 +1,12 @@
+{
+  "name": "ub-gateway",
+  "version": "1.0.0",
+  "description": "Unionbank hackathon entry",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "dev_appserver.py ."
+  },
+  "author": "",
+  "license": "ISC"
+}

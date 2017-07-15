@@ -1,0 +1,45 @@
+runtime: python27
+version: 1
+api_version: 1
+threadsafe: yes
+default_expiration: "7d"
+
+
+libraries:
+- name: webapp2
+  version: latest
+- name: jinja2
+  version: latest
+
+
+handlers:
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+  expiration: "30d"
+
+- url: /css
+  static_dir: frontend/css
+
+- url: /js
+  static_dir: frontend/js
+
+- url: /img
+  static_dir: frontend/img
+
+- url: /fonts
+  static_dir: frontend/fonts
+  expiration: "30d"
+
+- url: .*
+  script: main.app
+
+
+builtins:
+- deferred: on
+
+skip_files:
+- ^(.*/)?.*\.py[co]$
+- tests/
+- ptvsd/
+- node_modules/
