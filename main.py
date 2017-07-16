@@ -45,7 +45,7 @@ app = webapp2.WSGIApplication([
         webapp2.Route('/verify-error-notrecognize', handler=ErrNotRecognized, name=''),
         webapp2.Route('/verify-smspasscode', handler=SMSpass, name=''),
         webapp2.Route('/verify-success', handler=VerifySuccess, name=''),
-        webapp2.Route('/verifiyingface', handler=VerifyFace, name=''),
+        webapp2.Route('/verifyingface', handler=VerifyFace, name=''),
         webapp2.Route('/withdraw-amount', handler=WithdrawAmount, name=''),
         webapp2.Route('/withdraw', handler=Withdraw, name=''),
 

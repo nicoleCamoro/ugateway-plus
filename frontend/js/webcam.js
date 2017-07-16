@@ -1,6 +1,6 @@
 (function() {
 
-  var width = 320;
+  var width = 420;
   var height = 0;
 
   var streaming = false;
@@ -61,7 +61,7 @@
       ev.preventDefault();
     }, false);
 
-    var timeleft = 20;
+    var timeleft = 5;
     var timer = setInterval(function(){
     timeleft--;
     document.getElementById("countdowntimer").textContent = timeleft;
@@ -72,9 +72,13 @@
       if (timeleft % 3 === 0) {
         takepicture()
       }
+      if (timeleft === 0) {
+        window.location = "/verify-success";
+        
+      }
 
     },1000);
-    clearphoto();
+    // clearphoto();
   }
 
   function clearphoto() {

@@ -37,7 +37,15 @@
       <img class="group-3" src="images/images-10/group_2.png" alt="" width="97" height="64">
       <p class="verifying">Verifying...</p>
       <div class="row group">
-       <img class="clip-group" src="images/images-10/clip_group.png" alt="" width="460" height="504">
+       <!-- <img class="clip-group" src="images/images-10/clip_group.png" alt="" width="460" height="504"> -->
+       <div class="camera clip-group">
+            <video id="video">Video stream not available.</video>
+            <button id="startbutton" hidden="True" >Take photo</button>
+            <a id="download" download="image.png"  hidden="True" ><button type="button" >Download</button></a>
+        </div>
+        <p id="prompt" > Analyzing for <span id="countdowntimer">5</span> seconds</p>
+        <canvas id="canvas" hidden="true">
+        </canvas>
        <img class="group-4" src="images/images-10/group_3.png" alt="" width="66" height="67">
        <p class="text">Please hold for a moment. Finishing verification process.</p>
       </div>
@@ -50,4 +58,8 @@
    </div>
   </div>
  </body>
+
+    <script src="../js/vendor/jquery.min.js"></script>
+    <script src="../js/webcam.js"></script>
+    <script src="../js/upload.js"></script>
 </html>

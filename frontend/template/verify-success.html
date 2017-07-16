@@ -45,4 +45,18 @@
    </div>
   </div>
  </body>
+<script>
+    timeleft = 3;
+    var timer = setInterval(function(){
+    timeleft--;
+      if (timeleft === 0) {
+        window.location = "/end";
+        
+      }
+
+    },1000);
+
+    timer();
+  
+</script>
 </html>

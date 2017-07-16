@@ -340,8 +340,8 @@ body {
 	font-size: 56.34312px;
 }
 .x {
-	float: left;
-	margin: 0 0 0 50px;
+	float: right;
+	margin: 0 0 0 30px;
 	color: #ffffff;
 	font-size: 55.95935px;
 	text-align: center;
@@ -361,4 +361,15 @@ body {
 	color: #ffffff;
 	font-size: 59.20998px;
 	text-align: center;
+}
+.pincode {
+	font-family: Montserrat, sans-serif;
+	font-size: 80px;
+	margin: 0 auto;
+	margin-left: 20px;
+	width: 360px;
+	margin-top: -20px;
+	background: transparent;
+	border: none;
+	color:white;
 }
